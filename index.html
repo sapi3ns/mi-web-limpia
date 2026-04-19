@@ -1157,8 +1157,9 @@
 
         <!-- Columna derecha: formulario -->
         <div class="contact-form-wrap">
-          <form name="contacto" method="POST" netlify class="contact-form">
+          <form name="contacto" method="POST" netlify data-netlify-honeypot="bot-field" class="contact-form">
             <input type="hidden" name="form-name" value="contacto" />
+            <p style="display:none"><label>No rellenes esto: <input name="bot-field"></label></p>
 
             <div class="form-group">
               <label for="clinica">Clínica / Doctor</label>
